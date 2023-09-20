@@ -4,7 +4,14 @@ alert('Booting up...');
 alert('All systems go!');
 alert("Let's start");
 
-const username = prompt("Hi there. What's your name?");
+let username = prompt("Hi there. What's your name?");
+
+let mainName = username [0];
+mainName = mainName.toUpperCase();
+let restName = username.slice(1);
+restName = restName.toLowerCase();
+username = mainName + restName;
+
 alert(`Hi, ${username} --- Welcome to the Mars Adventure Game.`);
 
 alert('Yesterday, you received a call from your good friend at NASA.');
@@ -32,7 +39,7 @@ if(numSuitcases > 2) {
 }
 
 alert("You're allowed to bring one companion animal with you");
-const companionType = prompt('What kind of companion animal would you like to bring?');
+let companionType = prompt('What kind of companion animal would you like to bring?');
 let companionName = prompt("What is your companion name?");
 
 let firstLetter = companionName [0];
@@ -40,6 +47,12 @@ firstLetter = firstLetter.toUpperCase();
 let otherLetters = companionName.slice(1);
 otherLetters = otherLetters.toLowerCase();
 companionName = firstLetter + otherLetters;
+
+let firstType = companionType [0];
+firstType = firstType.toUpperCase();
+let otherType = companionType.slice(1);
+otherType = otherType.toLowerCase();
+companionType = firstType + otherType;
 
 alert(`Cool, so you're bringing ${companionName} the ${companionType}`);
 
