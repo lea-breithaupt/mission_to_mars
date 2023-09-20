@@ -62,3 +62,16 @@ if (decorChoice === 'A') {
 }
 
 alert(`${username} and ${companionName}, surfing the celestial abyss, in a ${decor} spaceship.`);
+
+alert('5 . . .');
+alert('4 . . .');
+alert('3 . . .');
+alert('2 . . .');
+alert('1 . . .');
+alert('*** LIFTOFF ***');
+
+let timer = 5;
+while (timer > 5) {
+    alert(`${timer} ...`);
+    timer = 0;
+}
